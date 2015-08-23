@@ -1,2 +1,2 @@
 # BlocksProcsLambda
-practise examples working with  blocks procs and lambda
+practise examples of application  of blocks procs and lambda
