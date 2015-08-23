@@ -28,3 +28,4 @@ puts arr.map!(num)
                 proc.new{|x|proc2.call(proc1.call(x))}
             end
                 square=Proc.new{|n|n*n}
+                
