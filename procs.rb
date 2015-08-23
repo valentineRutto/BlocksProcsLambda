@@ -1,4 +1,4 @@
-#this a procedure ,an object,it has a block of code and stored in a variable and can be passed to a method
+#this a procedure ,an object,it has a block of code and stored in a variable and can be passed to a method:EXISTS AS OBJECTS
 toast=Proc.new do
     3.times{puts "love ruby"}
 end
