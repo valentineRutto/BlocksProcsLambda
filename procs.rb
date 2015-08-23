@@ -25,8 +25,11 @@ arr=[2,4,3]
 puts arr.map!(num)
 #methods that return proc
             def procs proc1,proc2
-                proc.new{|x|proc2.call(proc1.call(x))}
+                Proc.new do |n|proc2.call(proc1.call(n))
             end
-                square=Proc.new{|n|n*n}
-                sum=proc.new{|n|n+n}
-                squared=procs square   
+        end
+            square=Proc.new do |n|n*n end 
+            
+            sum=Proc.new do |n|n+n end
+                squared=procs square,sum
+                    puts squared.call(6)
