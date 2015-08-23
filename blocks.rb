@@ -8,6 +8,7 @@ doItTwice do
     puts 'i passed this block to the method'
 end
 #method that takes a block,we turn the block into a proc with &
+#it should always be the last argument def xyz(char,num,&block)
 def doittwice(&block)
     block.call
     block.call
