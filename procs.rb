@@ -21,3 +21,5 @@ class Array
                 end
             end
             end
+arr=[2,4,3]
+puts arr.map!(num)
