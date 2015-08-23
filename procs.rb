@@ -23,3 +23,7 @@ class Array
             end
 arr=[2,4,3]
 puts arr.map!(num)
+#methods that return proc
+            def procs proc1,proc2
+                proc.new{|x|proc2.call(proc1.call(x))}
+            end
