@@ -5,8 +5,9 @@ end
 toast.call
 toast.call
 
-#methods that take proc
+#methods that takes proc
 def ruby myProc
     puts"ruby is so cool"
     myProc.call
 end
+code=Proc.new{puts "I know right"}
