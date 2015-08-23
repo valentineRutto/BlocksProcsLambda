@@ -12,3 +12,5 @@ def ruby myProc
 end
 code=Proc.new{puts "I know right"}
 ruby code
+#passing proc as a method parameter
+num=Proc.new{|n|n*n}
