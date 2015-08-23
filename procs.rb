@@ -11,3 +11,4 @@ def ruby myProc
     myProc.call
 end
 code=Proc.new{puts "I know right"}
+ruby code
