@@ -14,3 +14,10 @@ code=Proc.new{puts "I know right"}
 ruby code
 #passing proc as a method parameter
 num=Proc.new{|n|n*n}
+class Array
+        def map!(proc)
+            self.each_with_index do |value,index|
+                self[index]=proc.call(value)
+                end
+            end
+            end
